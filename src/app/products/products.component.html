@@ -1,0 +1,7 @@
+<div class="container">
+  <div *ngFor="let product of products" class="box">
+    <h2 style="text-align: center;">{{ product.name }}</h2>
+    <p>Price: {{ product.price }}</p>
+    <button style="margin-top: 20px;" (click)="viewDetails(product)">View More details</button>
+  </div>
+</div>
